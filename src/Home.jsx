@@ -6,14 +6,12 @@ import Stage1wellcome from './component/Stage1wellcome.jsx'
 import Stage2 from './component/Stage2.jsx'
 import Stage3 from './component/Stage3.jsx'
 import Stage4 from './component/Stage4.jsx'
-import Stage5 from './component/Stage5.jsx'
 
 const stages = [
   Stage1wellcome,
   Stage2,
   Stage3,
   Stage4,
-  Stage5,
 ]
 
 export function StageManager({ stages, onAllComplete, onStageChange }) {
