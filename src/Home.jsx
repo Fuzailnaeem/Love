@@ -4,13 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Fallingflowers from './component/Fallingflowers.jsx'
 import Stage1wellcome from './component/Stage1wellcome.jsx'
 import Stage2 from './component/Stage2.jsx'
-import Stage3 from './component/Stage3.jsx'
 import Stage4 from './component/Stage4.jsx'
 
 const stages = [
   Stage1wellcome,
   Stage2,
-  Stage3,
   Stage4,
 ]
 
