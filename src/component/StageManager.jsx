@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 export default function StageManager({ stages, onAllComplete, onStageChange }) {
   const [index, setIndex] = useState(0)

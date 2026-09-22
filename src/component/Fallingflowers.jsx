@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useState } from 'react'
 
 const FLOWER_EMOJIS = ['🌸', '🌺', '🌼', '🌷', '🌻']
 
@@ -8,7 +8,7 @@ const FLOWER_EMOJIS = ['🌸', '🌺', '🌼', '🌷', '🌻']
  * content in a wrapper with position: relative / z-index: 1 above it.
  */
 export default function FallingFlowers({ count = 30 }) {
-  const flowers = useMemo(() => {
+  const [flowers] = useState(() => {
     return Array.from({ length: count }).map((_, i) => ({
       id: i,
       left: Math.random() * 100,

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Stage2({ onComplete }) {
   const [progress, setProgress] = useState(1);

@@ -564,9 +564,11 @@ export default function EnvelopeReveal({ children, sealColor = "#c0392b" }) {
   }, [storySteps.length]);
 
   useEffect(() => {
+    const openTimers = openTimersRef.current;
+
     return () => {
       cleanupRef.current?.();
-      openTimersRef.current.forEach(clearTimeout);
+      openTimers.forEach(clearTimeout);
     };
   }, []);
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Fireworks from "./Fireworks.jsx";
 
 export default function Stage5({ onComplete }) {
